@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JM Analytics — Consultoria Digital para Concessionárias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-mark">JM</span>
+        <span class="nav__logo-text">JM<em>Analytics</em></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#diagnostico">Diagnóstico</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#depoimentos">Resultados</a></li>
+        <li><a href="#contato" class="nav__cta">Conversar</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="fundo.png" alt="" class="hero__bg-img" id="heroBgImg" />
+      <div class="hero__bg-overlay"></div>
+    </div>
+
+    <div class="hero__container">
+
+      <div class="hero__content" id="heroContent">
+
+        <p class="hero__eyebrow hero__anim hero__anim--1">
+          <span class="hero__eyebrow-line"></span>
+          Consultoria em Estratégia Digital Automotiva
+          <span class="hero__eyebrow-badge">▲ Setor Automotivo</span>
+        </p>
+
+        <h1 class="hero__headline">
+          <span class="hero__anim hero__anim--2">Mais de 6 anos ajudando empresas</span>
+          <span class="hero__anim hero__anim--3">a fortalecer sua presença digital,</span>
+          <span class="hero__anim hero__anim--4">e <em>atrair clientes e transformar oportunidades em resultados.</em></span>
+        </h1>
+
+        <p class="hero__sub hero__anim hero__anim--5">
+        Ao longo dos anos, acompanhamos a evolução do mercado automotivo e ajudamos empresas de diferentes segmentos a se posicionarem com mais autoridade no ambiente digital. Desenvolvemos estratégias alinhadas à realidade de cada negócio, focando em crescimento sustentável, geração de demanda e fortalecimento da marca
+        </p>
+
+        <div class="hero__actions hero__anim hero__anim--6">
+          <a href="#solucoes" class="btn btn--primary">
+            Ver Soluções
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#diagnostico" class="btn btn--ghost">Ver Diagnóstico</a>
+        </div>
+
+        <div class="hero__stats hero__anim hero__anim--7">
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="210" data-prefix="+" data-suffix="">+210</span>
+            <span class="hero__stat-label">projetos realizados</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="87" data-prefix="" data-suffix="%">87%</span>
+            <span class="hero__stat-label">aumento médio em captação digital</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="6" data-prefix="+" data-suffix=" anos">+6 anos</span>
+            <span class="hero__stat-label">de experiência no setor automotivo</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero__card-wrap hero__anim hero__anim--card">
+        <div class="specialist-card" id="specialistCard">
+          <div class="specialist-card__photo">
+            <img src="guedes.png" alt="Elizabeth Guedes — Especialista em Estratégia e Crescimento Empresarial" />
+            <div class="specialist-card__photo-overlay"></div>
+          </div>
+          <div class="specialist-card__body">
+            <div class="specialist-card__quote-mark" aria-hidden="true">"</div>
+            <blockquote class="specialist-card__quote">
+              Ao longo dos anos, vimos o mercado automotivo mudar rapidamente. Empresas que investem em posicionamento, relacionamento e processos digitais conseguem crescer de forma mais previsível. Nosso papel é ajudar cada cliente a construir esse caminho com estratégia e consistência.
+            </blockquote>
+            <footer class="specialist-card__footer">
+              <span class="specialist-card__name">Elizabeth Guedes</span>
+              <span class="specialist-card__role">Especialista em Estratégia<br>e CEO</span>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ══ TICKER ══ -->
+  <div class="ticker-wrap" id="ticker">
+    <div class="ticker__track" id="tickerTrack">
+      <div class="ticker__list" aria-hidden="true">
+        <span>JORNADA DO CLIENTE</span><span class="ticker__dot">◆</span>
+        <span>PRESENÇA DIGITAL</span><span class="ticker__dot">◆</span>
+        <span>CAPTAÇÃO DE OPORTUNIDADES</span><span class="ticker__dot">◆</span>
+        <span>EXPERIÊNCIA DE COMPRA</span><span class="ticker__dot">◆</span>
+        <span>ATENDIMENTO INTELIGENTE</span><span class="ticker__dot">◆</span>
+        <span>CONVERSÃO</span><span class="ticker__dot">◆</span>
+        <span>AUTORIDADE DIGITAL</span><span class="ticker__dot">◆</span>
+        <span>POSICIONAMENTO</span><span class="ticker__dot">◆</span>
+        <span>PERFORMANCE COMERCIAL</span><span class="ticker__dot">◆</span>
+        <span>INTELIGÊNCIA DE MERCADO</span><span class="ticker__dot">◆</span>
+        <span>GESTÃO COMERCIAL</span><span class="ticker__dot">◆</span>
+        <span>RELACIONAMENTO COM CLIENTES</span><span class="ticker__dot">◆</span>
+        <span>CREDIBILIDADE</span><span class="ticker__dot">◆</span>
+      </div>
+      <div class="ticker__list" aria-hidden="true">
+        <span>JORNADA DO CLIENTE</span><span class="ticker__dot">◆</span>
+        <span>PRESENÇA DIGITAL</span><span class="ticker__dot">◆</span>
+        <span>CAPTAÇÃO DE OPORTUNIDADES</span><span class="ticker__dot">◆</span>
+        <span>EXPERIÊNCIA DE COMPRA</span><span class="ticker__dot">◆</span>
+        <span>ATENDIMENTO INTELIGENTE</span><span class="ticker__dot">◆</span>
+        <span>CONVERSÃO</span><span class="ticker__dot">◆</span>
+        <span>AUTORIDADE DIGITAL</span><span class="ticker__dot">◆</span>
+        <span>POSICIONAMENTO</span><span class="ticker__dot">◆</span>
+        <span>PERFORMANCE COMERCIAL</span><span class="ticker__dot">◆</span>
+        <span>INTELIGÊNCIA DE MERCADO</span><span class="ticker__dot">◆</span>
+        <span>GESTÃO COMERCIAL</span><span class="ticker__dot">◆</span>
+        <span>RELACIONAMENTO COM CLIENTES</span><span class="ticker__dot">◆</span>
+        <span>CREDIBILIDADE</span><span class="ticker__dot">◆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ DIAGNÓSTICO ══ -->
+  <section class="diag" id="diagnostico">
+    <div class="diag__inner">
+
+      <div class="diag__header">
+        <p class="diag__eyebrow"><span class="diag__eyebrow-line"></span>Diagnóstico Rápido</p>
+        <h2 class="diag__title">Os desafios que mais<br>impactam os resultados no <em>setor automotivo.</em></h2>
+        <p class="diag__sub">Identifique o que pode estar limitando o crescimento da sua empresa e conheça caminhos para evoluir com mais previsibilidade.</em></h2>
+
+      <div class="diag__pills">
+
+        <!-- CARD 01 -->
+<button class="diag__pill" data-target="sol-1">
+    <span class="diag__pill-rank">#1</span>
+
+    <div class="diag__pill-content">
+        <div>
+            <span class="diag__pill-text">
+                Quando o movimento diminui,<br>
+                o problema aparece.
+            </span>
+
+            <span class="diag__pill-stat">
+                A maioria das empresas só percebe sua dependência de indicações quando os clientes deixam de chegar.
+            </span>
+        </div>
+    </div>
+</button>
+
+<!-- CARD 02 -->
+<button class="diag__pill" data-target="sol-2">
+    <span class="diag__pill-rank">#2</span>
+
+    <div class="diag__pill-content">
+        <div>
+            <span class="diag__pill-text">
+                Nem toda oportunidade<br>
+                perdida avisa que foi embora.
+            </span>
+
+            <span class="diag__pill-stat">
+                Enquanto você responde depois, o concorrente responde agora.
+            </span>
+        </div>
+    </div>
+</button>
+
+<!-- CARD 03 -->
+<button class="diag__pill" data-target="sol-3">
+    <span class="diag__pill-rank">#3</span>
+
+    <div class="diag__pill-content">
+        <div>
+            <span class="diag__pill-text">
+                A decisão acontece<br>
+                antes do contato.
+            </span>
+
+            <span class="diag__pill-stat">
+                Hoje o cliente pesquisa, compara e escolhe em quem confiar.
+            </span>
+        </div>
+    </div>
+</button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SOLUÇÕES ══ -->
+  <section class="solucoes" id="solucoes">
+    <div class="solucoes__inner">
+
+      <div class="solucoes__header">
+        <p class="solucoes__eyebrow"><span class="solucoes__eyebrow-line"></span>A Esteira de Soluções</p>
+        <h2 class="solucoes__title">Cinco sistemas. Um único objetivo:<br><em>fazer sua loja vender mais.</em></h2>
+      </div>
+
+      <div class="solucoes__grid" id="solucoesGrid">
+
+        <div class="sol-card" id="sol-1" data-index="01">
+          <div class="sol-card__top">
+            <div class="sol-card__tag">Atendimento 24h</div>
+            <div class="sol-card__number">01</div>
+          </div>
+          <h3 class="sol-card__title">Sentinela Digital<br><em>no WhatsApp</em></h3>
+          <p class="sol-card__desc">Um atendente com IA humanizada que nunca dorme. Opera em plantão noturno, como transbordo (se o vendedor demorar +15 min) ou como auditor — qualifica o interesse, descobre o modelo desejado e retém o lead até o próximo dia útil.</p>
+          <ul class="sol-card__impacts">
+            <li>Zera a perda de leads nas madrugadas e fins de semana</li>
+            <li>Vendedor começa o dia com agenda cheia e leads quentes</li>
+            <li>3 modalidades configuráveis pelo lojista</li>
+          </ul>
+          <div class="sol-card__footer">
+            <span class="sol-card__metric">"Salvar 1 venda na madrugada já paga meses do sistema"</span>
+            <a href="https://wa.me/5521969181327?text=Olá, quero saber mais sobre a Sentinela Digital no WhatsApp" target="_blank" rel="noopener" class="sol-card__cta">Quero saber mais</a>
+          </div>
+        </div>
+
+        <div class="sol-card" id="sol-2" data-index="02">
+          <div class="sol-card__top">
+            <div class="sol-card__tag">Reativação Automática</div>
+            <div class="sol-card__number">02</div>
+          </div>
+          <h3 class="sol-card__title">Motor de<br><em>Follow-up Inteligente</em></h3>
+          <p class="sol-card__desc">Uma esteira que não esquece. Lead sumiu após a visita? Disparo automático. Cliente comprou há 2+ anos? O sistema escaneia a base e envia uma proposta de troca personalizada — sem depender do vendedor se lembrar.</p>
+          <ul class="sol-card__impacts">
+            <li>Recupera vendas que a equipe esqueceu de acompanhar</li>
+            <li>Reativa base histórica sem gastar em novos anúncios</li>
+            <li>Cadência automática de até 5 contatos por lead</li>
+          </ul>
+          <div class="sol-card__footer">
+            <span class="sol-card__metric">"Reativar 1 cliente antigo gera lucro puro sem custo de mídia"</span>
+            <a href="https://wa.me/5521969181327?text=Olá, quero saber mais sobre o Motor de Follow-up Inteligente" target="_blank" rel="noopener" class="sol-card__cta">Quero saber mais</a>
+          </div>
+        </div>
+
+        <div class="sol-card" id="sol-3" data-index="03">
+          <div class="sol-card__top">
+            <div class="sol-card__tag">Inteligência de Estoque</div>
+            <div class="sol-card__number">03</div>
+          </div>
+          <h3 class="sol-card__title">Radar de<br><em>Margem</em></h3>
+          <p class="sol-card__desc">Garimpo automatizado em tempo real. Varre editais de pátios, leilões e portais de anúncios da sua região, disparando alertas no WhatsApp quando encontra veículos abaixo do preço médio de mercado — antes que o concorrente veja.</p>
+          <ul class="sol-card__impacts">
+            <li>Estoque recomposto com carros de alta margem de lucro</li>
+            <li>Alertas instantâneos no WhatsApp, 24h por dia</li>
+            <li>Você age primeiro, sempre</li>
+          </ul>
+          <div class="sol-card__footer">
+            <span class="sol-card__metric">"Achar 1 carro com margem alta antes do concorrente vale meses de sistema"</span>
+            <a href="https://wa.me/5521969181327?text=Olá, quero saber mais sobre o Radar de Margem" target="_blank" rel="noopener" class="sol-card__cta">Quero saber mais</a>
+          </div>
+        </div>
+
+        <div class="sol-card" id="sol-4" data-index="04">
+          <div class="sol-card__top">
+            <div class="sol-card__tag">Painel Estratégico</div>
+            <div class="sol-card__number">04</div>
+          </div>
+          <h3 class="sol-card__title">Termômetro de<br><em>Giro Regional</em></h3>
+          <p class="sol-card__desc">Chega de comprar no feeling. Um painel analítico que calcula o tempo médio de venda de cada modelo na sua região — separando os carros de alta liquidez dos "micos" que ficam meses imobilizando seu capital de giro no pátio.</p>
+          <ul class="sol-card__impacts">
+            <li>Decisão de compra baseada em dados reais da sua praça</li>
+            <li>Proteção total do capital de giro da loja</li>
+            <li>Nunca mais investir em modelo com baixa saída regional</li>
+          </ul>
+          <div class="sol-card__footer">
+            <span class="sol-card__metric">"Evitar 1 'mico' pode economizar dezenas de milhares travados no pátio"</span>
+            <a href="https://wa.me/5521969181327?text=Olá, quero saber mais sobre o Termômetro de Giro Regional" target="_blank" rel="noopener" class="sol-card__cta">Quero saber mais</a>
+          </div>
+        </div>
+
+        <div class="sol-card" id="sol-5" data-index="05">
+          <div class="sol-card__top">
+            <div class="sol-card__tag">Avaliação Inteligente</div>
+            <div class="sol-card__number">05</div>
+          </div>
+          <h3 class="sol-card__title">Precificador &<br><em>Supervisor de Troca</em></h3>
+          <p class="sol-card__desc">Blindagem financeira para o setor de avaliação. O vendedor insere os dados do carro de troca e o sistema cruza FIPE, médias locais e histórico de defeitos crônicos para sugerir o valor máximo seguro. Também monitora o custo diário de cada carro parado.</p>
+          <ul class="sol-card__impacts">
+            <li>Padroniza avaliações — toda troca entra com margem de lucro</li>
+            <li>Elimina prejuízos ocultos causados por supervalorização na troca</li>
+            <li>Monitora custo de pátio e preços dos concorrentes vizinhos</li>
+          </ul>
+          <div class="sol-card__footer">
+            <span class="sol-card__metric">"Blindagem que garante que nenhuma troca gere prejuízo oculto na loja"</span>
+            <a href="https://wa.me/5521969181327?text=Olá, quero saber mais sobre o Precificador Inteligente" target="_blank" rel="noopener" class="sol-card__cta">Quero saber mais</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="solucoes__combo">
+        <div class="solucoes__combo-body">
+          <p class="solucoes__combo-label">◆ Oferta Estratégica</p>
+          <h3 class="solucoes__combo-title">Concessionária Inteligente — <em>Combo Full</em></h3>
+          <p class="solucoes__combo-desc">As 5 soluções integradas rodando juntas na nuvem da sua loja. Setup único com desconto e mensalidade unificada — menos que o custo de um vendedor, com o impacto de uma equipe inteira.</p>
+        </div>
+        <a href="#contato" class="btn btn--ghost solucoes__combo-cta">Quero o pacote completo</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ DEPOIMENTOS ══ -->
+  <section class="depo" id="depoimentos">
+    <div class="depo__inner">
+
+      <div class="depo__header">
+        <p class="depo__eyebrow"><span class="depo__eyebrow-line"></span>Resultados Reais</p>
+        <h2 class="depo__title">Quem já transformou<br>sua <em>concessionária.</em></h2>
+        <p class="depo__sub">Gestores que pararam de depender só da equipe e deixaram a inteligência digital trabalhar junto.</p>
+      </div>
+
+      <div class="depo__grid">
+
+        <div class="depo__card">
+          <div class="depo__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depo__quote">
+            Pra falar a verdade, eu era meio resistente a essas coisas de automação. Achava que era mais uma ferramenta pra pagar. Depois que a JM Analytics organizou nosso atendimento, percebi quantos clientes a gente deixava escapar sem nem perceber. Hoje a equipe trabalha melhor e eu consigo enxergar o negócio com muito mais clareza.
+          </blockquote>
+          <div class="depo__author">
+            <div class="depo__avatar" aria-hidden="true">C</div>
+            <div>
+              <span class="depo__name">Carlos M.</span>
+              <span class="depo__role">Gestor de uma concessionária multimarcas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="depo__card depo__card--featured">
+          <div class="depo__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depo__quote">
+            Confesso que no começo fiquei com um pé atrás. Mais uma ferramenta, mais um sistema... mas depois de algumas semanas usando, percebi o quanto a gente estava deixando dinheiro parado sem perceber. Hoje até meu sócio, que não gosta muito dessas novidades, consulta os relatórios antes de fechar compra. Mudou bastante a forma como administramos o estoque.
+          </blockquote>
+          <div class="depo__author">
+            <div class="depo__avatar" aria-hidden="true">R</div>
+            <div>
+              <span class="depo__name">Roberto A.</span>
+              <span class="depo__role">Proprietário de concessionária de seminovos</span>
+            </div>
+          </div>
+          <div class="depo__badge">◆ Destaque</div>
+        </div>
+
+        <div class="depo__card">
+          <div class="depo__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depo__quote">
+            Todo dono de empresa sabe como é frustrante ver um cliente demonstrar interesse e depois desaparecer. Antes isso acontecia com frequência e a gente nem percebia o tamanho da perda. Com o processo automatizado, passamos a recuperar contatos que já considerávamos perdidos. Meu time continua fazendo o que faz de melhor: vender. Só que agora ninguém fica para trás.
+          </blockquote>
+          <div class="depo__author">
+            <div class="depo__avatar" aria-hidden="true">M</div>
+            <div>
+              <span class="depo__name">Mariana T.</span>
+              <span class="depo__role">Gestora de concessionária especializada em motos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="depo__card">
+          <div class="depo__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depo__quote">
+            Teve carro que eu jamais teria encontrado sozinho. Hoje o alerta chega e a gente consegue agir rápido.
+          </blockquote>
+          <div class="depo__author">
+            <div class="depo__avatar" aria-hidden="true">F</div>
+            <div>
+              <span class="depo__name">Fábio L.</span>
+              <span class="depo__role">Sócio-gestor de concessionária de veículos importados</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="depo__card">
+          <div class="depo__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depo__quote">
+            Implementamos o Precificador e Supervisor de Troca e descobrimos que estávamos tendo prejuízo oculto em praticamente toda avaliação de troca. O sistema padronizou tudo. Toda avaliação agora entra com margem garantida. O financeiro da loja melhorou de forma consistente logo no primeiro trimestre.
+          </blockquote>
+          <div class="depo__author">
+            <div class="depo__avatar" aria-hidden="true">A</div>
+            <div>
+              <span class="depo__name">Adriana S.</span>
+              <span class="depo__role">Diretora de operações</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="depo__card">
+          <div class="depo__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depo__quote">
+            No começo achei que seria só mais uma ferramenta. Depois de algumas semanas percebi que a operação inteira ficou mais organizada. Hoje temos mais controle, menos retrabalho e sobra mais tempo para focar no que realmente importa: vender.
+          </blockquote>
+          <div class="depo__author">
+            <div class="depo__avatar" aria-hidden="true">P</div>
+            <div>
+              <span class="depo__name">Paulo R.</span>
+              <span class="depo__role">Gestor de rede com 3 unidades de concessionárias</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTATO ══ -->
+  <section class="contato" id="contato">
+    <div class="contato__inner">
+
+      <div class="contato__header">
+        <div class="contato__eyebrow">
+          <span class="contato__eyebrow-line"></span>
+          Entre em Contato
+        </div>
+        <h2 class="contato__title">Pronto para transformar <em>sua concessionária</em>?</h2>
+        <p class="contato__sub">Converse com um especialista e descubra qual solução faz mais sentido para o momento da sua loja.</p>
+      </div>
+
+      <div class="contato__cards">
+        <div class="contato__card">
+          <div class="contato__card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22c-2.5 0-4.5-2-4.5-4.5S9.5 13 12 13s4.5 2 4.5 4.5-2 4.5-4.5 4.5z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 13V2"/>
+              <circle cx="12" cy="17.5" r="1.5"/>
+            </svg>
+          </div>
+          <h3 class="contato__card-title">Atendimento para todo o Brasil</h3>
+          <p class="contato__card-sub">100% digital</p>
+        </div>
+
+        <div class="contato__card">
+          <div class="contato__card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="contato__card-title">Resposta em até 2 horas</h3>
+          <p class="contato__card-sub">Em dias úteis, das 8h às 20h</p>
+        </div>
+
+        <div class="contato__card">
+          <div class="contato__card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+          </div>
+          <h3 class="contato__card-title">Diagnóstico gratuito</h3>
+          <p class="contato__card-sub">Sem compromisso de contratação</p>
+        </div>
+      </div>
+
+        </a>
+
+      <div class="contato__form-wrapper">
+        <form id="contatoForm" class="contato__form" novalidate>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="nome">Nome Completo <span class="form__required">*</span></label>
+              <input type="text" id="nome" name="nome" class="form__input" placeholder="Seu nome" required>
+            </div>
+          </div>
+
+          <div class="form__row form__row--2cols">
+            <div class="form__group">
+              <label class="form__label" for="email">E-mail Corporativo <span class="form__required">*</span></label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="telefone">Telefone / WhatsApp <span class="form__required">*</span></label>
+              <input type="tel" id="telefone" name="telefone" class="form__input" placeholder="(00) 00000-0000" maxlength="15" required>
+            </div>
+          </div>
+
+          <div class="form__row form__row--2cols">
+            <div class="form__group">
+              <label class="form__label" for="empresa">Empresa <span class="form__required">*</span></label>
+              <input type="text" id="empresa" name="empresa" class="form__input" placeholder="Nome da empresa" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="cargo">Cargo <span class="form__required">*</span></label>
+              <select id="cargo" name="cargo" class="form__select" required>
+                <option value="">Selecione...</option>
+                <option value="proprietario">Proprietário/Sócio</option>
+                <option value="diretor">Diretor</option>
+                <option value="gerente">Gerente Geral</option>
+                <option value="gerente-vendas">Gerente de Vendas</option>
+                <option value="gerente-pecas">Gerente de Peças</option>
+                <option value="gerente-servicos">Gerente de Serviços</option>
+                <option value="marketing">Marketing/Publicidade</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="tamanho">Tamanho da Empresa <span class="form__required">*</span></label>
+              <select id="tamanho" name="tamanho" class="form__select" required>
+                <option value="">Selecione...</option>
+                <option value="pequena">Pequena (até 20 funcionários)</option>
+                <option value="media">Média (21 a 100 funcionários)</option>
+                <option value="grande">Grande (101 a 500 funcionários)</option>
+                <option value="muito-grande">Muito Grande (mais de 500 funcionários)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="mensagem">Como podemos ajudar seu negócio? <span class="form__required">*</span></label>
+              <textarea id="mensagem" name="mensagem" class="form__textarea" placeholder="Conte brevemente seu principal desafio ou objetivo com dados..." rows="4" required></textarea>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <label class="form__checkbox">
+              <input type="checkbox" name="privacidade" required>
+              <span class="form__checkbox-text">Ao enviar, autorizo o contato da equipe e declaro estar de acordo com a <a href="#">Política de Privacidade</a>.</span>
+            </label>
+          </div>
+
+          <div class="form__row">
+            <button type="submit" class="form__submit">Solicitar Contato</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ WhatsApp Floating Button ══ -->
+  <a
+    href="https://wa.me/5521969181327?text=Olá! Vi o site da JM Analytics e gostaria de conversar."
+    target="_blank"
+    rel="noopener"
+    class="wa-float"
+    aria-label="Abrir WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 2C8.268 2 2 8.268 2 16c0 2.478.676 4.8 1.854 6.793L2 30l7.41-1.832A13.938 13.938 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2z" fill="white"/>
+      <path d="M21.5 18.784c-.307-.153-1.814-.895-2.095-.997-.28-.102-.485-.153-.689.153-.204.307-.79.997-.968 1.201-.179.204-.357.23-.664.077-.307-.153-1.295-.477-2.467-1.522-.912-.813-1.527-1.816-1.706-2.123-.178-.307-.019-.473.134-.625.137-.137.307-.357.46-.536.154-.178.205-.307.307-.511.103-.204.052-.383-.025-.536-.077-.153-.689-1.661-.944-2.275-.249-.598-.501-.517-.689-.526l-.587-.01c-.204 0-.536.077-.817.383-.28.307-1.07 1.046-1.07 2.552 0 1.507 1.096 2.963 1.249 3.167.153.204 2.157 3.294 5.226 4.623.73.315 1.3.503 1.744.644.733.233 1.4.2 1.927.121.588-.088 1.814-.741 2.07-1.458.255-.716.255-1.33.178-1.458-.076-.128-.28-.204-.587-.357z" fill="#25D366"/>
+    </svg>
+    <span class="wa-float__pulse" aria-hidden="true"></span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
